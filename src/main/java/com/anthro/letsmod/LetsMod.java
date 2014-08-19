@@ -1,5 +1,6 @@
 package com.anthro.letsmod;
 
+import com.anthro.letsmod.config.ConfigHandler;
 import com.anthro.letsmod.proxy.IProxy;
 import com.anthro.letsmod.reference.Reference;
 import cpw.mods.fml.common.Mod;
@@ -27,7 +28,7 @@ public class LetsMod
   @Mod.EventHandler
   public void preInit(FMLPreInitializationEvent e)
   {
-    
+    ConfigHandler.init(e.getSuggestedConfigurationFile());
   }
   
   @Mod.EventHandler
