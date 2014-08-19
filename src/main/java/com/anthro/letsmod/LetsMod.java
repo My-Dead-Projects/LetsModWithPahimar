@@ -1,6 +1,7 @@
 package com.anthro.letsmod;
 
 import com.anthro.letsmod.proxy.IProxy;
+import com.anthro.letsmod.reference.Reference;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -10,7 +11,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 /**
  * @author anthropomorphic
  */
-@Mod(modid = "LetsMod", name = "Lets Mod With Pahimar", version = "1.7.2-1.0")
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class LetsMod
 {  
   @Mod.Instance("LetsMod")
