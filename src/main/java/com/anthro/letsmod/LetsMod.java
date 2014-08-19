@@ -19,8 +19,8 @@ public class LetsMod
   
   @SidedProxy
   (
-      clientSide = "com.anthro.letsmod.proxy.ClientProxy",
-      serverSide = "com.anthro.letsmod.proxy.ServerProxy"
+      clientSide = Reference.CLIENT_PROXY_CLASS,
+      serverSide = Reference.SERVER_PROXY_CLASS
   )
   public static IProxy proxy;
   
