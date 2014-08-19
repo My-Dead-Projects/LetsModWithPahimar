@@ -1,4 +1,4 @@
-package com.anthro.letsmod.config;
+package com.anthro.letsmod.handler;
 
 import net.minecraftforge.common.config.Configuration;
 import java.io.File;

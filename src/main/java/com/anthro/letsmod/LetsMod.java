@@ -1,6 +1,6 @@
 package com.anthro.letsmod;
 
-import com.anthro.letsmod.config.ConfigHandler;
+import com.anthro.letsmod.handler.ConfigHandler;
 import com.anthro.letsmod.proxy.IProxy;
 import com.anthro.letsmod.reference.Reference;
 import cpw.mods.fml.common.Mod;
