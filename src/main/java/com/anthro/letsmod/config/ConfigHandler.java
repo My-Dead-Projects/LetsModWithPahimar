@@ -8,9 +8,10 @@ import java.io.File;
  */
 public class ConfigHandler
 {
+  public static Configuration config;
   public static void init(File configFile)
   {
-    Configuration config = new Configuration(configFile);
+    config = new Configuration(configFile);
     
     try
     {
