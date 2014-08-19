@@ -18,8 +18,8 @@ buildscript {
 apply plugin: 'forge'
 
 version = "1.7.2-1.0"
-group= "com.anthropomorphic.letsmodwithpahimar" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "LetsModWithPahimar"
+group= "com.anthro.letsmod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "LetsMod"
 
 minecraft {
     version = "1.7.2-10.12.2.1147"
