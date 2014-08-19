@@ -5,5 +5,6 @@ package com.anthro.letsmod.reference;
  */
 public class Reference
 {
-  
+  public static final String MOD_ID = "LetsMod";
+  public static final String MOD_NAME = "Lets Mod With Pahimar";
 }
