@@ -12,7 +12,12 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 /**
  * @author anthropomorphic
  */
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
+@Mod(
+    modid = Reference.MOD_ID,
+    name = Reference.MOD_NAME,
+    version = Reference.VERSION,
+    guiFactory = Reference.GUI_FACTORY_CLASS
+)
 public class LetsMod
 {  
   @Mod.Instance("LetsMod")
