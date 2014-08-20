@@ -20,6 +20,7 @@ public class ConfigHandler
     if (config == null)
     {
       config = new Configuration(configFile);
+      resyncConfig();
     }
   }
   
