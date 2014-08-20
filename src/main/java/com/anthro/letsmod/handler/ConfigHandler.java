@@ -1,5 +1,8 @@
 package com.anthro.letsmod.handler;
 
+import com.anthro.letsmod.reference.Reference;
+import cpw.mods.fml.client.event.ConfigChangedEvent;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.common.config.Configuration;
 import java.io.File;
 
@@ -9,32 +12,38 @@ import java.io.File;
 public class ConfigHandler
 {
   public static Configuration config;
+  
+  public static boolean testValue = false;
+  
   public static void init(File configFile)
   {
-    config = new Configuration(configFile);
+    if (config == null)
+    {
+      config = new Configuration(configFile);
+    }
+  }
+  
+  @SubscribeEvent
+  public void onConfigChange(ConfigChangedEvent.OnConfigChangedEvent e)
+  {
+    if (e.modID.equalsIgnoreCase(Reference.MOD_ID))
+    {
+      resyncConfig();
+    }
+  }
+  
+  public void resyncConfig()
+  {
+    testValue = config.getBoolean(
+        "testValue",
+        Configuration.CATEGORY_GENERAL,
+        false, //
+        "This is a test config value"
+    );
     
-    try
+    if (config.hasChanged())
     {
-      config.load();
-      
-      boolean configValue = config.get
-          (
-              Configuration.CATEGORY_GENERAL,
-              "configValue",
-              true,
-              "This is an example config value"
-          ).getBoolean(true);
-    }
-    catch (Exception e)
-    {
-      
-    }
-    finally
-    {
-      if (config.hasChanged())
-      {
-        config.save();
-      }
+      config.save();
     }
   }
 }
