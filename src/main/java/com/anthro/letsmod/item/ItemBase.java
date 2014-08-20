@@ -18,7 +18,7 @@ public class ItemBase extends Item
   public String getUnlocalizedName()
   {
     return String.format(
-        "item.%s%s",
+        "item.%s:%s",
         Reference.MOD_ID.toLowerCase(),
         getUnwrappedUnlocalizedName(super.getUnlocalizedName())
     );
@@ -28,7 +28,7 @@ public class ItemBase extends Item
   public String getUnlocalizedName(ItemStack itemStack)
   {
     return String.format(
-        "item.%s%s",
+        "item.%s:%s",
         Reference.MOD_ID.toLowerCase(),
         getUnwrappedUnlocalizedName(super.getUnlocalizedName())
     );
