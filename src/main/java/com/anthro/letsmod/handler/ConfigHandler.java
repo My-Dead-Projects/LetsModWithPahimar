@@ -32,7 +32,7 @@ public class ConfigHandler
     }
   }
   
-  public void resyncConfig()
+  private static void resyncConfig()
   {
     testValue = config.getBoolean(
         "testValue",
