@@ -8,5 +8,6 @@ public class ItemMapleLeaf extends ItemBase
   public ItemMapleLeaf()
   {
     super();
+    setUnlocalizedName("mapleLeaf");
   }
 }
