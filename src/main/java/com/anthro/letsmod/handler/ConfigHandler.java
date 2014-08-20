@@ -20,7 +20,7 @@ public class ConfigHandler
     if (config == null)
     {
       config = new Configuration(configFile);
-      resyncConfig();
+      syncConfig();
     }
   }
   
@@ -29,11 +29,11 @@ public class ConfigHandler
   {
     if (e.modID.equalsIgnoreCase(Reference.MOD_ID))
     {
-      resyncConfig();
+      syncConfig();
     }
   }
   
-  private static void resyncConfig()
+  private static void syncConfig()
   {
     testValue = config.getBoolean(
         "testValue",
