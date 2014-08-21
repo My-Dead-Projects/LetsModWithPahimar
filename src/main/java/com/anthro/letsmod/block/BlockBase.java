@@ -1,5 +1,6 @@
 package com.anthro.letsmod.block;
 
+import com.anthro.letsmod.creativetab.CreativeTab;
 import com.anthro.letsmod.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -15,6 +16,7 @@ public class BlockBase extends Block
   protected BlockBase(Material material)
   {
     super(material);
+    setCreativeTab(CreativeTab.LETS_MOD_TAB);
   }
   
   @Override

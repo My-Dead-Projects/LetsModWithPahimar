@@ -1,5 +1,6 @@
 package com.anthro.letsmod.item;
 
+import com.anthro.letsmod.creativetab.CreativeTab;
 import com.anthro.letsmod.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -15,6 +16,7 @@ public class ItemBase extends Item
   public ItemBase()
   {
     super();
+    setCreativeTab(CreativeTab.LETS_MOD_TAB);
   }
   
   @Override
