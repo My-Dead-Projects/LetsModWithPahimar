@@ -10,17 +10,12 @@ import net.minecraft.item.Item;
  */
 public class CreativeTab
 {
-  public static final CreativeTabs LETS_MOD_TAB = new CreativeTabs(Reference.MOD_ID)
+  public static final CreativeTabs LETS_MOD_TAB = new CreativeTabs(Reference.MOD_ID.toLowerCase())
   {
     @Override
-    public Item getTabIconItem() {
-      return ItemRegistry.mapleLeaf;
-    }
-    
-    @Override
-  public String getTranslatedTabLabel()
+    public Item getTabIconItem()
     {
-      return "Let's Mod";
+      return ItemRegistry.mapleLeaf;
     }
   };
 }
