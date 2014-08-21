@@ -7,7 +7,7 @@ import net.minecraft.block.material.Material;
  */
 public class BlockFlag extends BlockBase
 {
-  protected BlockFlag()
+  public BlockFlag()
   {
     super(Material.rock);
     setBlockName("flag");
