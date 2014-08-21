@@ -7,7 +7,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 /**
  * @author anthropomorphic
  */
-public class ModItems
+public class ItemRegistry
 {
   
   public static final ItemBase mapleLeaf = new ItemMapleLeaf();
