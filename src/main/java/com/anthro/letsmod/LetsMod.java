@@ -1,6 +1,7 @@
 package com.anthro.letsmod;
 
 import com.anthro.letsmod.handler.ConfigHandler;
+import com.anthro.letsmod.init.BlockRegistry;
 import com.anthro.letsmod.init.ModItems;
 import com.anthro.letsmod.proxy.IProxy;
 import com.anthro.letsmod.reference.Reference;
@@ -38,6 +39,7 @@ public class LetsMod
     ConfigHandler.init(e.getSuggestedConfigurationFile());
     FMLCommonHandler.instance().bus().register(new ConfigHandler());
     ModItems.init();
+    BlockRegistry.init();
   }
   
   @Mod.EventHandler
