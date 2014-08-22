@@ -3,6 +3,7 @@ package com.anthro.letsmod;
 import com.anthro.letsmod.handler.ConfigHandler;
 import com.anthro.letsmod.init.BlockRegistry;
 import com.anthro.letsmod.init.ItemRegistry;
+import com.anthro.letsmod.init.Recipes;
 import com.anthro.letsmod.proxy.IProxy;
 import com.anthro.letsmod.reference.Reference;
 import cpw.mods.fml.common.FMLCommonHandler;
@@ -45,7 +46,7 @@ public class LetsMod
   @Mod.EventHandler
   public void init(FMLInitializationEvent e)
   {
-    
+    Recipes.init();
   }
   
   @Mod.EventHandler
