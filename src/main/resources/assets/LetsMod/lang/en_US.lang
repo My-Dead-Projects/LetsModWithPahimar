@@ -7,3 +7,7 @@ item.letsmod:flag.name=Canadian Flag
 
 # Creative Tabs
 itemGroup.letsmod=Let's Mod With Pahimar
+
+# Key Bindings
+keys.letsmod.charge=Charge
+keys.letsmod.release=Release
