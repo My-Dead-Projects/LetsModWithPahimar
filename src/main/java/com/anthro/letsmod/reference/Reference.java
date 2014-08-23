@@ -14,7 +14,7 @@ public final class Reference
   
   public static final class KeyBinding
   {
-    public static final String CHARGE = "keys.letsmod.chage";
+    public static final String CHARGE = "keys.letsmod.charge";
     public static final String RELEASE = "keys.letsmod.release";
   }
 }
