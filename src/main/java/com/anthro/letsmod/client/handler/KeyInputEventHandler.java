@@ -2,6 +2,7 @@ package com.anthro.letsmod.client.handler;
 
 import com.anthro.letsmod.client.settings.KeyBindings;
 import com.anthro.letsmod.reference.Key;
+import com.anthro.letsmod.utility.Log;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.InputEvent;
 
@@ -26,6 +27,6 @@ public class KeyInputEventHandler
   @SubscribeEvent
   public void handleKeyInputEvent(InputEvent.KeyInputEvent event)
   {
-    
+    Log.info(getPressedKeyBinding());
   }
 }
