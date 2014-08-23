@@ -3,7 +3,7 @@ package com.anthro.letsmod.reference;
 /**
  * @author anthropomorphic
  */
-public enum KeyBinding
+public enum KeyBindingEnum
 {
   CHARGE, RELEASE, UNKNOWN;
 }
