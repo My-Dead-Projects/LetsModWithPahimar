@@ -12,7 +12,7 @@ public final class Reference
   public static final String SERVER_PROXY_CLASS = "com.anthro.letsmod.proxy.ServerProxy";
   public static final String GUI_FACTORY_CLASS  = "com.anthro.letsmod.client.gui.GuiFactory";
   
-  public static final class KeyBinding
+  public static final class KeyBindingName
   {
     public static final String CHARGE = "keys.letsmod.charge";
     public static final String RELEASE = "keys.letsmod.release";
