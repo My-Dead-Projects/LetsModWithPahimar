@@ -5,5 +5,9 @@ package com.anthro.letsmod.proxy;
  */
 public class ClientProxy extends CommonProxy
 {
-  
+  @Override
+  public void registerKeyBindings()
+  {
+    
+  }
 }

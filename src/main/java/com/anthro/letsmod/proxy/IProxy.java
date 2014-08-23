@@ -5,5 +5,5 @@ package com.anthro.letsmod.proxy;
  */
 public interface IProxy
 {
-  
+  public abstract void registerKeyBindings();
 }
