@@ -41,6 +41,7 @@ public class LetsMod
     FMLCommonHandler.instance().bus().register(new ConfigHandler());
     ItemRegistry.init();
     BlockRegistry.init();
+    proxy.registerKeyBindings();
   }
   
   @Mod.EventHandler
