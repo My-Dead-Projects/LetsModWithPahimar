@@ -1,5 +1,6 @@
 package com.anthro.letsmod;
 
+import com.anthro.letsmod.client.handler.KeyInputEventHandler;
 import com.anthro.letsmod.handler.ConfigHandler;
 import com.anthro.letsmod.init.BlockRegistry;
 import com.anthro.letsmod.init.ItemRegistry;
@@ -48,6 +49,7 @@ public class LetsMod
   public void init(FMLInitializationEvent e)
   {
     Recipes.init();
+    FMLCommonHandler.instance().bus().register(new KeyInputEventHandler());
   }
   
   @Mod.EventHandler
